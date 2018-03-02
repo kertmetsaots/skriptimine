@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+# enda saavutused
+#
+echo "Kert Metsaots" # väljastab reavahetusega nime
+echo "IS117" # väljasta õppegrupi reavahetusega
+echo "Antud õppeaine tundub OK" # väljastab antud õppeaine talutavust reavahetusega
+echo "Praegune mulje on positiivne ning edasijõudmine läheb jõudsalt" # väljastab praeguse mulje reavahetusega
+#
+# skripti lõpp
+
