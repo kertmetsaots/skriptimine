@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+echo -n "sisesta suvaline arv:" #sisesta parameeter
+read var 
+jaak=$(( $var % 2 )) #jagab antud parameetri 2-ga
+if [ $jaak -eq 0 ]; then # kui parameeter võrdub 0-ga, siis
+echo "antud arv on paaris" # antud parameeter on paaris
+else
+echo "antud arv on paaritu" 
+fi 
