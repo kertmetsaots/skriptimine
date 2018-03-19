@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+echo -n "sisesta oma ees- ja perenimi: " #väljastab nime ja perenime
+read eesnimi perenimi #loeb eesnime ja perenime
+echo "Tere tulemast, $eesnimi $perenimi" #väljastab kirjutatu
