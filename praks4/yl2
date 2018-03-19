@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+echo -n "sisesta aluskandiku pikkus ja laius cm-des:"
+read pikkus laius
+kandik=`expr $pikkus \* $laius`
+echo "aluskandiku pikkus $kandik cm"
+#
+echo -n "sisesta, kui suured kypsiseid kasutatakse tordil cm-des:"
+read kypsised1 kypsised2
+kypsised=`expr $kypsised1 \* $kypsised2`
+echo "küpsiste suurus on $kypsised cm"
+#
+echo -n "sisestan, mitu kypsist on yhes pakis:"
+read pakis
+echo "pakis on $pakis kypsist"
+#
+echo -n "sisesta, mitu kihti soovite tordile:"
+read kiht
+yhes_kihis=`expr $kandik / $kypsised \* $kiht / $pakis`
+echo "tordile on vaja $yhes_kihis pakki küpsist"
