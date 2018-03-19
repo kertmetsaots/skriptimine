@@ -1,0 +1,2 @@
+#! /bin/bash
+echo '$HOSTNAME at $(uptime)' | grep ',' | cut -f l -d ',' #väljastab kasutaja töötaja
