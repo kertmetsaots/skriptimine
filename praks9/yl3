@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#skripti algus
+echo -n "Sisesta ridade arv: "
+read r
+echo -n "Sisesta tärnide arv: "
+read t 
+for (( i= 1; i <= $r; i++ ))
+do
+echo -n "$i"
+#
+if [ $i -eq 1 -o $i -eq $r ]
+then
+for (( j = 1; j <= $t; j++ ))
+do
+echo -n "* "
+done
+#
+else 
+echo -n "* "
+for (( j = 2;j < $t; j++ ))
+do
+echo -n " "
+done
+echo -n "* "
+fi
+echo
+done
