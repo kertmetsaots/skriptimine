@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+echo -n "sisesta kolmnurga külgede väärtused (a ja b):" #sisesta vajalikud parameetrid
+read a b #loeb parameetreid
+kylg=`expr $a \* $a + $b \* $b` #arvutab sisestatud parameetrid (korrutab ja liidab)
+calc=$(echo "scale=2; sqrt ($kylg)" | bc ) #võtab sisestatud parameetrites ruutjuure ja 2 kohta peale koma
+echo "kolmnurga hüpotenuus (c) on $calc" #anna vastuse
