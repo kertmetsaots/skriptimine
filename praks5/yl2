@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+echo -n "sisesta külgede väärtused a, b ja c:" #sisesta parameetrid
+read a b c #loeb parameetreid
+kyljed=`echo "scale=2; ($a+$b+$c) / 2" | bc` #arvutab parammeetreid, alguses liidab ja siis jagab kahega
+echo "külgede pikkused on $kyljed" #väljastab eelmise vastuse
+pindala=`echo "scale=2; sqrt ($kyljed * ($kyljed - $a) * ($kyljed - $b) * ($kyljed- $c))" | bc` #arvutab parameetrid mis said sisestatud, kasutades heroni valemit
+echo "pindala on $pindala" #väljastab vastuse
