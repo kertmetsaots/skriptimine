@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+echo -n "sisesta kuu number:"
+read a
+if [ $a -le 2 -o $a -eq 12 ]; then
+echo "praegu on talv"
+else
+if [ $a -ge 3 -a $a -le 5 ]; then
+echo "praegu on kevad"
+else
+if [ $a -ge 6 -a $a -le 8 ]; then
+echo "praegu on suvi"
+else
+if [ $a -ge 7 -a $a -le 11 ]; then
+echo "praegu on sügis"
+fi
+fi
+fi
+fi
+
