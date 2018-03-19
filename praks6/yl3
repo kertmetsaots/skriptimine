@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+echo -n "sisesta reisijate arv:"
+read a
+echo -n "sisesta kohtade arv bussis:"
+read b
+busside_arv=$(( $a / $b ))
+ei_mahtunud=$(( $a % $b ))
+if [ $a -gt $busside_arv ]; then
+num=`expr $busside_arv + 1`
+echo "kokku on vaja $num täisbussi"
+else
+echo "kokku on vaja $busside_arv"
+fi
