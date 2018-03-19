@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# kuupäeva ja aja skript
+#
+date +'Today is %A, %B %m. %Y' #väljastab kuupäeva
+date +'Time is %R' #Väljastab hetkel aja
+echo 'Calender of' #Väljastab kalendri pealkirja
+cal #väljastab kalendri
