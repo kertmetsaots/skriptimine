@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+echo -n "sisesta vanus:" #sisesta parameetrid
+read vanus # loeb parameetrit
+if [ $vanus -le 11 ]; then # kui vanus on vähem või võrdne kui 11
+echo "Oled laps" #väljastab oled laps
+else
+if [ $vanus -ge 11 -a $vanus -le 18 ]; then # kui vanus on suurem või võrdne kui 18 ja vähem või võrdne kui 63
+echo "Oled nooruk" # väljastab oled täiskasvanu
+else
+if [ $vanus -ge 18 -a $vanus -le 63 ]; then # kui vanus on suurem või võrdne kui 18 ja vähem või võrdne kui 63
+echo "oled täiskasvanud" 
+else
+if [ $vanus -ge 63 ]; then # kui vanus on suurem või võrdne kui 63
+echo "oled seenior" #oled seenior
+fi # lõpetab käsu
+fi
+fi
+fi
